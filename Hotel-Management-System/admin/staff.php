@@ -18,7 +18,7 @@ include '../config.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/room.css">
     <style>
-        .roombox{
+        .roombox {
             background-color: #d1d7ff;
             padding: 10px;
         }
@@ -35,10 +35,10 @@ include '../config.php';
             <select name="staffwork" class="form-control">
                 <option value selected></option>
                 <option value="Manager">Manager</option>
-                <option value="Cook">Cook</option>
-                <option value="Helper">Helper</option>
-                <option value="cleaner">cleaner</option>
-                <option value="weighter">weighter</option>
+                <option value="Chef">Chef</option>
+                <option value="Tyvana-Help">Tyvana-Help</option>
+                <option value="Maid">Maid</option>
+                <option value="Waiter">Waiter</option>
             </select>
 
             <button type="submit" class="btn btn-success" name="addstaff">Add Room</button>
@@ -62,18 +62,18 @@ include '../config.php';
 
     <!-- here room add because room.php and staff.php both css is similar -->
     <div class="room">
-    <?php
+        <?php
         $sql = "select * from staff";
         $re = mysqli_query($conn, $sql)
         ?>
         <?php
         while ($row = mysqli_fetch_array($re)) {
-                echo "<div class='roombox'>
+            echo "<div class='roombox'>
 						<div class='text-center no-boder'>
                             <i class='fa fa-users fa-5x'></i>
 							<h3>" . $row['name'] . "</h3>
                             <div class='mb-1'>" . $row['work'] . "</div>
-                            <a href='staffdelete.php?id=". $row['id'] ."'><button class='btn btn-danger'>Delete</button></a>
+                            <a href='staffdelete.php?id=" . $row['id'] . "'><button class='btn btn-danger'>Delete</button></a>
 						</div>
                     </div>";
         }

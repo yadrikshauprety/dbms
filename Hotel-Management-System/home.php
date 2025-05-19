@@ -22,7 +22,7 @@ if($usermail == true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <title>Hotel blue bird</title>
+    <title>Tyvana</title>
     <!-- boot -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -45,7 +45,7 @@ if($usermail == true){
   <nav>
     <div class="logo">
       <img class="bluebirdlogo" src="" alt="">
-      <p>Velora</p>
+      <p>Tyvana</p>
     </div>
     <ul>
       <li><a href="#firstsection">Home</a></li>
@@ -59,7 +59,7 @@ if($usermail == true){
   <section id="firstsection" class="carousel slide carousel_section" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="carousel-image" src="./image/hotel1.jpg">
+            <img class="carousel-image" src="./image/tanhpotek.jpg">
         </div>
         <div class="carousel-item">
             <img class="carousel-image" src="./image/hotel2.jpg">
@@ -129,13 +129,7 @@ if($usermail == true){
                         <!-- <option value="1">2</option>
                         <option value="1">3</option> -->
                     </select>
-                    <select name="Meal" class="selectinput">
-						<option value selected >Meal</option>
-                        <option value="Room only">Room only</option>
-                        <option value="Breakfast">Breakfast</option>
-						<option value="Half Board">Half Board</option>
-						<option value="Full Board">Full Board</option>
-					</select>
+                
                     <div class="datesection">
                         <span>
                             <label for="cin"> Check-In</label>
@@ -210,13 +204,7 @@ if($usermail == true){
           <div class="hotelphoto h1"></div>
           <div class="roomdata">
             <h2>Superior Room</h2>
-            <div class="services">
-              <i class="fa-solid fa-wifi"></i>
-              <i class="fa-solid fa-burger"></i>
-              <i class="fa-solid fa-spa"></i>
-              <i class="fa-solid fa-dumbbell"></i>
-              <i class="fa-solid fa-person-swimming"></i>
-            </div>
+            
             <button class="btn btn-primary bookbtn" onclick="openbookbox()">Book</button>
           </div>
         </div>
@@ -224,12 +212,7 @@ if($usermail == true){
           <div class="hotelphoto h2"></div>
           <div class="roomdata">
             <h2>Delux Room</h2>
-            <div class="services">
-              <i class="fa-solid fa-wifi"></i>
-              <i class="fa-solid fa-burger"></i>
-              <i class="fa-solid fa-spa"></i>
-              <i class="fa-solid fa-dumbbell"></i>
-            </div>
+            
             <button class="btn btn-primary bookbtn" onclick="openbookbox()">Book</button>
           </div>
         </div>
@@ -237,11 +220,7 @@ if($usermail == true){
           <div class="hotelphoto h3"></div>
           <div class="roomdata">
             <h2>Guest Room</h2>
-            <div class="services">
-              <i class="fa-solid fa-wifi"></i>
-              <i class="fa-solid fa-burger"></i>
-              <i class="fa-solid fa-spa"></i>
-            </div>
+            
             <button class="btn btn-primary bookbtn" onclick="openbookbox()">Book</button>
           </div>
         </div>
@@ -249,10 +228,7 @@ if($usermail == true){
           <div class="hotelphoto h4"></div>
           <div class="roomdata">
             <h2>Single Room</h2>
-            <div class="services">
-              <i class="fa-solid fa-wifi"></i>
-              <i class="fa-solid fa-burger"></i>
-            </div>
+            
             <button class="btn btn-primary bookbtn" onclick="openbookbox()">Book</button>
           </div>
         </div>
@@ -261,7 +237,7 @@ if($usermail == true){
   </section>
 
   <section id="thirdsection">
-    <h1 class="head">≼ Facilities ≽</h1>
+    <h1 class="head">Facilities </h1>
     <div class="facility">
       <div class="box">
         <h2>Swiming pool</h2>
@@ -278,21 +254,17 @@ if($usermail == true){
       <div class="box">
         <h2>Heli service</h2>
       </div>
+       <div class="box">
+        <h2>Day Tour</h2>
+      </div>
     </div>
   </section>
-
-  <section id="contactus">
-    <div class="social">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-solid fa-envelope"></i>
-    </div>
-    <div class="createdby">
-      <h3>Created by @yadri</h3>
-    </div>
-  </section>
-      <footer id="contactus">
-     <div class="createdby">© 2025 BlueBird Hotels. All rights reserved.</div>
+<footer class="contact-box" id="contactus">
+  <div class="createdby">
+    <h6>Created by Yadriksha, Tanushree, Vaibhav, Tanisha, Yuvraj</h6>
+    <p>© Tyvana. All rights reserved.</p>
+    <p>In case of any queries,suggestions Please do Contact us.Let's Connect via Tyvana Socials</p>
+  </div>
   <div class="social">
     <i class="fab fa-facebook-f"></i>
     <i class="fab fa-instagram"></i>
@@ -300,6 +272,7 @@ if($usermail == true){
     <i class="fab fa-youtube"></i>
   </div>
 </footer>
+
 
 </body>
 

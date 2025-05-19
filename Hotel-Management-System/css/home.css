@@ -21,11 +21,11 @@
     /* text-shadow: var(--bg-text-shadow); */
 }
 
-nav{
+nav {
     position: fixed;
     height: 60px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.279);
+    background-color: #ffffff; /* Solid white background */
     z-index: 200;
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,7 @@ nav{
     padding: 0px 100px;
     /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.386); */
 }
+
 
 nav ul{
     width: 500px;
@@ -100,13 +101,13 @@ ul li a:hover{
     height: 100vh;
     /* padding: 0 50px; */
 }
-#firstsection .carousel-inner::after{
+/*#firstsection .carousel-inner::after{
     content: "";
     position: absolute;
     height: 100vh;
     width: 100%;
     background-color: rgba(178, 170, 236, 0.533);
-}
+}*/
 
 #firstsection .carousel-item{
     overflow: hidden;
@@ -185,7 +186,17 @@ ul li a:hover{
     background-color: rgb(8, 8, 48);
     border-radius: 10px;
     overflow: hidden;
-    /* margin: 0 20px; */
+    /* margin: 0 20px*/
+    border: 2px solid white;
+    background-color: #ececec;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--bg-box-shadow);
+    transition: transform 0.2s ease;
+   
 }
 
 .hotelphoto{
@@ -212,8 +223,8 @@ ul li a:hover{
     text-align: center;
 }
 
-.roomdata h2{
-color: rgb(207, 211, 255);
+.roomdata h4{
+color: rgb(21, 21, 21);
 font-size: 30px;
 }
 
@@ -248,13 +259,17 @@ font-size: 30px;
 }
 
 #thirdsection{
-    height: 80vh;
+   /* height: 80vh;*/
     width: 100%;
+    padding-bottom:60px;
     /* background-color: black; */
 }
 
 .facility {
     width: 100%;
+    max-width:1000px;
+    margin:auto;
+   
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -310,32 +325,46 @@ font-size: 30px;
     background-image: url(../image/heli.jpg);
 }
 
-
-#contactus{
-    height: 70px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 100px;
+#contactus.contact-box {
+  width: 95%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#contactus .social{
-    width: 200px;
-    display: flex;
-    justify-content: space-evenly;
+#contactus .createdby h6,
+#contactus .createdby p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #444;
+  margin: 5px 0;
 }
 
-#contactus i{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
+#contactus .social {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
 }
 
-#contactus .createdby{
-    color: white;
+#contactus .social i {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
+
+#contactus .social i:hover {
+  color: #007bff;
+}
+
 
 /* responsive stuff */
 
@@ -397,7 +426,7 @@ font-size: 30px;
         height: 100vh;
     }
     .facility{
-        height: 70%;
+        height: 80%;
         flex-wrap: wrap;
     }
     .facility .box{
@@ -417,7 +446,7 @@ font-size: 30px;
     }
 
     #contactus{
-        padding: 0 30px;
+        padding: 0 50px;
     }
 }
 #contactus{
